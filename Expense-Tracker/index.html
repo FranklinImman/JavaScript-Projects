@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div class="container">
+        <div class="ledger">
+            <h2>Income-Expense Tracker</h2>
+            <h3 class="Balance">
+                Your Balance
+            </h3>
+            <h1 class="balance-tracker">₹ 0.00</h1>
+            <div class="inc-exp-container">
+                <div class="inc">
+                    <h4>Income</h4>
+                    <p id="inc-amt" class="amt-plus">₹ 0.00</p>
+                </div>
+                <div class="exp">
+                    <h4>Expense</h4>
+                    <p id="exp-amt" class="amt-minus"> ₹ 0.00</p>
+            </div>
+            <form action="#" id="form">
+                <div class="form-control">
+                <label for="des">
+                    Description
+                </label>
+                <input type="text" id="desc" name="desc" placeholder="Enter the description">
+
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount
+                </label>
+                <input type="number" id="amount" name="amount" placeholder="Enter the Amount">
+
+            </div>
+            </form>
+        </div>
+        <div class="transaction">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
